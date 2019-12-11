@@ -1,0 +1,19 @@
+{
+  "name": "redis-postgres-node-java",
+  "version": "1.0.0",
+  "description": "REDIS Postgres NODE-JAVA",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab-sogeticloud-customers.services.clever-cloud.com/poc/redis-postgres-node-java.git"
+  },
+  "author": "Mohamed Oubella",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "pg": "^7.14.0"
+  }
+}

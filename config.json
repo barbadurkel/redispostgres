@@ -1,0 +1,8 @@
+{ 
+    "USERNAME" : "falcon",
+    "PASSWORD" : "toor",
+    "HOST" : "localhost",
+    "PSQLPORT" : 5432,
+    "DBNAME": "mydb",
+    "SERVERPORT" : 3000
+}
