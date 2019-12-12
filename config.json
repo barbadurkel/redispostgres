@@ -1,8 +1,10 @@
 { 
-    "USERNAME" : "falcon",
-    "PASSWORD" : "toor",
+    "PSQLUSERNAME" : "falcon",
+    "PSQLPASSWORD" : "toor",
     "HOST" : "localhost",
     "PSQLPORT" : 5432,
     "DBNAME": "mydb",
-    "SERVERPORT" : 3000
+    "SERVERPORT" : 3000,
+    "SERVERPORT2" : 3001,
+    "REDISPASSWORD" : "redispw"
 }
