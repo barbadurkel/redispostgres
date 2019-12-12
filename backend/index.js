@@ -10,13 +10,13 @@ const { SERVERPORT, PSQLUSERNAME, PSQLPASSWORD, HOST, PSQLPORT, DBNAME, REDISPAS
 
     */  
 
-const postgresClient = new Client({
+/* const postgresClient = new Client({
     user: PSQLUSERNAME,
     password: PSQLPASSWORD,
     host: HOST,
     port: PSQLPORT,
     database: DBNAME
-})
+}) */
 
 
 const app = express()

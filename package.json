@@ -4,8 +4,8 @@
   "description": "REDIS Postgres NODE-JAVA",
   "main": "index.js",
   "scripts": {
-    "test": "nodemon index.js",
-    "start": "nodemon insert.js"
+    "test": "nodemon backend/index.js",
+    "start": "nodemon backend/insert.js"
   },
   "repository": {
     "type": "git",
