@@ -1,0 +1,17 @@
+version: '3'
+services:
+
+    node:
+        build:
+            context: ./node
+        container_name: node-container
+        ports: 
+            - 3000:3000
+            - 3001:3001
+    redis:
+        build: 
+            context: ./redis
+        image: 'redis'
+        container_name: redis-container
+        ports: 
+            - 6379:6379
