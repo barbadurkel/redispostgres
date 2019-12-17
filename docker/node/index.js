@@ -47,11 +47,16 @@ app.get('/', (req, res) =>
 
     */     
    
-const redisClient = redis.createClient({});
+    // NOTE: redis runs on 6379
+    // HERE we setup networking with Docker compose
+const redisClient = redis.createClient({
+    host: 'redis-server',  // this is the 'service name' in docker compose
+    port: 6379
+});
 
-    redisClient.auth(REDISPASSWORD, () => {
-        console.log('Authentifié à Redis')
-    })
+    // redisClient.auth(REDISPASSWORD, () => {
+    //     console.log('Authentifié à Redis')
+    // })
     redisClient.on('connect', () => {
         console.log('Connecté à la base de données Redis')
     })
