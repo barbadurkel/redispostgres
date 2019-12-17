@@ -28,7 +28,7 @@
 
 
 ## TODO : 
-- Dockertize the app
+- Dockertize the app (Docker compose problems!)
 - Redis/ Postgres load testing (JMeter)
 - Scalability verification
   

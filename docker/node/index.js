@@ -47,8 +47,11 @@ app.get('/', (req, res) =>
 
     */     
    
-const redisClient = redis.createClient();
+const redisClient = redis.createClient({});
 
+    redisClient.auth(REDISPASSWORD, () => {
+        console.log('Authentifié à Redis')
+    })
     redisClient.on('connect', () => {
         console.log('Connecté à la base de données Redis')
     })
@@ -58,12 +61,9 @@ const redisClient = redis.createClient();
         
     })
 
-    redisClient.auth(REDISPASSWORD, () => {
-        console.log('Authentifié à Redis')
-    })
 
     app.get('/', (req, res) => {
-        redisClient.hgetall('mydata', (err, data) => {
+        redisClient.hgetall('key', (err, data) => {
             if (err) console.log(err)
             else res.send(data)
         })
